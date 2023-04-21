@@ -1,6 +1,7 @@
 let mainImg = document.getElementById("mainImg");
 let card = document.getElementById("changecard");
-let cardValue = card.value;
+let e = card.value;
+let cardValue = card.options[card.selectedIndex].value;
 
 function changeCard() {
    if(cardValue == "jandar")
