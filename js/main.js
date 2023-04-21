@@ -45,7 +45,7 @@ function test() {
 
  if (charImg.type && !charImg.type.startsWith('image/')) {
 
-   console.log('File is not an image.', charImg.type, charImg);
+   alert('File is not an image.', charImg.type, charImg);
 
    return;
 
