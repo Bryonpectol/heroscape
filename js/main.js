@@ -6,10 +6,6 @@ let testImg = document.getElementById("testImg");
 
 let charImg = document.getElementById("charImg");
 
-function test() {
-  testImg.setAttribute("src", charImg);
-}
-
 function onChange() {
   var value = e.value;
   var text = e.options[e.selectedIndex].text;
@@ -46,6 +42,8 @@ function test() {
  if (charImg.type && !charImg.type.startsWith('image/')) {
 
    alert('File is not an image.' + ", " + charImg.type + ", " + charImg.value);
+
+   testImg.setAttribute("src", charImg.value);
 
    return;
 
