@@ -4,8 +4,10 @@ let e = document.getElementById("changecard");
 
 let testImg = document.getElementById("testImg");
 
+let charImg = document.getElementById("charImg").value;
+
 function test() {
-  testImg.setAttribute("src", );
+  testImg.setAttribute("src", charImg);
 }
 
 function onChange() {
