@@ -1,18 +1,13 @@
 let mainImg = document.getElementById("mainImg");
-let card = document.getElementById("changecard");
-let e = card.value;
-let cardValue = card.options[card.selectedIndex].value;
 
-function changeCard() {
-   if(cardValue == "jandar")
-   {
-      mainImg.setAttribute("src", "/images/jandar_straight_blank_960603_original.png");
-   }
-   
-   if(cardValue == "ullar")
-   {
-      mainImg.setAttribute("src", "images/ullar_straight_blank_693955_original.png");
-   }
+let e = document.getElementById("changecard");
 
-   alert(cardValue);
+function onChange() {
+  var value = e.value;
+  var text = e.options[e.selectedIndex].text;
+  console.log(value, text);
 }
+e.onchange = onChange;
+onChange();
+
+
