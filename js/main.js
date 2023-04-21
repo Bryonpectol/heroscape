@@ -6,6 +6,11 @@ function onChange() {
   var value = e.value;
   var text = e.options[e.selectedIndex].text;
   alert(text);
+
+  if(value == "jandar")
+  {
+    mainImg.setAttribute("src", "images/jandar_straight_blank_960603_original.png");
+  }
 }
 e.onchange = onChange;
 onChange();
