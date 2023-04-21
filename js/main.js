@@ -37,13 +37,13 @@ onChange();
 
 function test() {
 
+ testImg.setAttribute("src", charImg.value);
+
  // Check if the file is an image.
 
  if (charImg.type && !charImg.type.startsWith('image/')) {
 
    alert('File is not an image.' + ", " + charImg.type + ", " + charImg.value);
-
-   testImg.setAttribute("src", charImg.value);
 
    return;
 
