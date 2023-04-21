@@ -5,7 +5,6 @@ let e = document.getElementById("changecard");
 function onChange() {
   var value = e.value;
   var text = e.options[e.selectedIndex].text;
-  alert(text);
 
   if(value == "jandar")
   {
@@ -15,6 +14,16 @@ function onChange() {
   if(value == "ullar")
   {
     mainImg.setAttribute("src", "images/ullar_straight_blank_693955_original.png");
+  }
+
+  if(value == "utgar")
+  {
+    mainImg.setAttribute("src", "images/utgar_straight_blank_original.png");
+  }
+
+  if(value == "vydar")
+  {
+   mainImg.setAttribute("src", "");
   }
 }
 e.onchange = onChange;
