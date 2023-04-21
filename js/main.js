@@ -11,6 +11,11 @@ function onChange() {
   {
     mainImg.setAttribute("src", "images/jandar_straight_blank_960603_original.png");
   }
+
+  if(value == "ullar")
+  {
+    mainImg.setAttribute("src", "images/ullar_straight_blank_693955_original.png");
+  }
 }
 e.onchange = onChange;
 onChange();
