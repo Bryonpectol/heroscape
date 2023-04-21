@@ -37,8 +37,6 @@ onChange();
 
 function test() {
 
- testImg.setAttribute("src", charImg.value);
-
  // Check if the file is an image.
 
  if (charImg.type && !charImg.type.startsWith('image/')) {
@@ -58,6 +56,8 @@ function test() {
  });
 
  reader.readAsDataURL(charImg.value);
+
+ testImg.setAttribute("src", charImg.value);
 
 }
 
