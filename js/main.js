@@ -38,3 +38,29 @@ e.onchange = onChange;
 onChange();
 
 
+
+function test() {
+
+ // Check if the file is an image.
+
+ if (charImg.type && !charImg.type.startsWith('image/')) {
+
+   console.log('File is not an image.', charImg.type, charImg);
+
+   return;
+
+ }
+
+ const reader = new FileReader();
+
+ reader.addEventListener('load', (event) => {
+
+   img.src = event.target.result;
+
+ });
+
+ reader.readAsDataURL(charImg);
+
+}
+
+
