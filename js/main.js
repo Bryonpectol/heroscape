@@ -4,7 +4,7 @@ let e = document.getElementById("changecard");
 
 let testImg = document.getElementById("testImg");
 
-let charImg = document.getElementById("charImg").value;
+let charImg = document.getElementById("charImg");
 
 function test() {
   testImg.setAttribute("src", charImg);
