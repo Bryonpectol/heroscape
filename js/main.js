@@ -57,7 +57,7 @@ function test() {
 
  });
 
- reader.readAsDataURL(charImg);
+ reader.readAsDataURL(charImg.value);
 
 }
 
