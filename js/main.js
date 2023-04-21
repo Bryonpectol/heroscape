@@ -7,4 +7,11 @@ function changeCard() {
    {
       mainImg.setAttribute("src", "/images/jandar_straight_blank_960603_original.png");
    }
+   
+   if(cardValue == "ullar")
+   {
+      mainImg.setAttribute("src", "images/ullar_straight_blank_693955_original.png");
+   }
+
+   alert(cardValue);
 }
